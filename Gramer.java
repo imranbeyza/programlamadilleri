@@ -14,7 +14,7 @@ public class Gramer {
         String[] yuklem = {"Gitmek", "Gelmek", "Okumak", "Yazmak", "Yürümek", "Görmek"};
 
         System.out.println("Bir cumle giriniz:");
-        String cumle = scanner.nextLine();
+        String cumle = scanner.nextLine().trim();
         String[] kelimeler = cumle.replaceAll("\\s+", " ").split(" ");
 
         // Kelimeler dizisindeki ilk kelimenin özne dizisinde olup olmadığının kontrolü
